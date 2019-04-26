@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sticky-top-panel-menu_tap" transform="translate(-551.000000, -42.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="top-panel-menu">
+                <g transform="translate(370.000000, 20.000000)">
+                    <g id="top-menu-burger" transform="translate(167.000000, 10.000000)">
+                        <g id="menu-burger" transform="translate(14.000000, 13.000000)">
+                            <path d="M5.58578644,7.01421356 L-0.0142135624,1.41421356 L1.4,-1.63646874e-13 L7,5.6 L12.7279221,-0.127922061 L14.1421356,1.2862915 L8.41421356,7.01421356 L14.1279221,12.7279221 L12.7137085,14.1421356 L7,8.42842712 L1.41421356,14.0142136 L1.25122135e-13,12.6 L5.58578644,7.01421356 Z" id="menu"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

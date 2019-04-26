@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>phone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#FFFFFF">
+            <polygon id="Fill-5" points="6.6719 9.6521 4.0989 6.5761 5.6289 5.2921 3.0639 2.2361 -0.0001 4.8071 2.5649 7.8631 2.5739 7.8551 5.1469 10.9311 5.1419 10.9351 7.7139 14.0001 10.7749 11.4311 8.2029 8.3671"></polygon>
+            <path d="M7,-0.0003 L7,1.0767 C10.271,1.0767 12.923,3.7287 12.923,6.9997 L14,6.9997 C14,3.1337 10.866,-0.0003 7,-0.0003" id="Fill-1"></path>
+            <path d="M7,2.9997 L7,4.1427 C8.578,4.1427 9.857,5.4217 9.857,6.9997 L11,6.9997 C11,4.7907 9.209,2.9997 7,2.9997" id="Fill-3"></path>
+        </g>
+    </g>
+</svg>

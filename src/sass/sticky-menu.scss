@@ -1,0 +1,68 @@
+@import '_fonts';
+@import '_variables';
+
+.menu.fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: $mainTextColor;
+	justify-content: flex-start;
+	height: 0;
+	overflow: hidden;
+	transition: height $animationSpeed;
+	z-index: 444;
+	flex-direction: column;
+	&.show {
+		height: 100px;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 100px;
+		&-cell {
+			display: flex;
+			align-items: center;
+		}
+	}
+	.logo {
+		display: flex;
+		align-items: center;
+		width: 127px;
+		height: 60px;
+		padding-left: 71px;
+		color: $white;
+		margin-right: 40px;
+		background: url("../assets/logo-test.svg") 0 0 no-repeat;
+		background-size: contain;
+	}
+	.menu-opener {
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 90px;
+		height: 40px;
+		padding-left: 42px;
+		font-family: 'CeraPro-Regular';
+		color: $white;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 2px solid $openerBorderColor;
+		border-radius: 2px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 14px;
+			width: 18px;
+			background: url("../assets/fixed-menu-burger.svg") 0 center no-repeat;
+		}
+	}
+	.navigation {
+		height: 0;
+		transition: height $animationSpeed;
+	}
+}
+

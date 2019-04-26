@@ -1,0 +1,301 @@
+@import '_fonts';
+@import '_variables';
+
+.breadcrumbs {
+	padding: 14px 0;
+	&-list {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&-item {
+		position: relative;
+		font-size: 12px;
+		color: $breadcrumpCurrentColor;
+		letter-spacing: 0;
+		line-height: 30px;
+		text-transform: uppercase;
+		a {
+			color: $mainTextColor;
+			text-decoration: none;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				right: 0;
+				bottom: -4px;
+				left: 0;
+				border-bottom: 1px solid $mainTextColor;
+			}
+		}
+	}
+	&-item + &-item {
+		padding-left: 15px;
+		&::before {
+			content: '';
+			width: 2px;
+			height: 2px;
+			border-radius: 50%;
+			background: $mainTextColor;
+			position: absolute;
+			top: 13px;
+			left: 8px;
+		}
+	}
+}
+
+.error-page404 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding-top: 63px;
+	padding-left: 130px;
+	.content {
+		position: relative;
+		width: 100%;
+		max-width: 910px;
+		padding-bottom: 90px;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			right: -2px;
+			width: 170px;
+			height: 111px;
+			background: url("../assets/lamp_alladin_404.svg") bottom right no-repeat;
+		}
+		&-image {
+			position: absolute;
+			right: 43px;
+			top: -139px;
+			width: 458px;
+			height: 650px;
+			background: url("../img/Group9.jpg") 0 0 no-repeat;
+			background-size: cover;
+		}
+		&-heading {
+			position: relative;
+			z-index: 2;
+			padding-bottom: 245px;
+			margin-bottom: 71px;
+			&::after {
+				content: '';
+				width: 460px;
+				height: 195px;
+				position: absolute;
+				bottom: -18px;
+				left: -4px;
+				background: url("../assets/404.svg") bottom left no-repeat;
+			}
+			&-title {
+				font-family: Helvetica;
+				font-size: 46px;
+				color: #162331;
+				letter-spacing: -1.5px;
+				line-height: 20px;
+				font-weight: normal;
+				margin:0 0 20px;
+			}
+			&-text {
+				font-family: Helvetica;
+				font-size: 16px;
+				color: #758494;
+				letter-spacing: -0.25px;
+				font-weight: normal;
+				margin: 0;
+			}
+		}
+		&-button {
+			display: flex;
+			width: 180px;
+			height: 50px;
+			text-decoration: none;
+			background: $mainTextColor;
+			position: relative;
+			border-radius: 2px;
+			margin-bottom: 30px;
+			&-link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				font-family: 'CeraPro-Bold';
+				font-size: 12px;
+				color: #FFFFFF;
+				letter-spacing: -0.19px;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			&::before {
+				content: '';
+				width: 6px;
+				height: 10px;
+				position: absolute;
+				top: 19px;
+				left: 32px;
+				background: url("../assets/arrow-white-small-left.svg") 0 0 no-repeat;
+				transform: rotate(180deg);
+			}
+		}
+		&-social {
+			display: flex;
+			justify-content: space-between;
+			width: 230px;
+			.social-list {
+				&-item {
+					width: 50px;
+					height: 50px;
+					box-shadow: rgba($mainTextColor, 0.15) 5px 5px 10px;
+					border-radius: 50%;
+					&.facebook {
+						background: url("../assets/fb.svg") center center no-repeat;
+						&:hover {
+							background-image: url("../assets/fb-white.svg");
+							background-color: $socialButtonsHover;
+						}
+					}
+					&.in {
+						background: url("../assets/in.svg") center center no-repeat;
+						&:hover {
+							background-image: url("../assets/in-white.svg");
+							background-color: $socialButtonsHover;
+						}
+					}
+					&.skype {
+						background: url("../assets/skype.svg") center center no-repeat;
+						&:hover {
+							background-image: url("../assets/skype-white.svg");
+							background-color: $socialButtonsHover;
+						}
+					}
+					&.telegram {
+						background: url("../assets/telegram.svg") center center no-repeat;
+						&:hover {
+							background-color: $socialButtonsHover;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.services {
+	padding-top: 6px;
+	&-heading {
+		font-size: 32px;
+		color: $mainTextColor;
+		letter-spacing: -1px;
+		margin: 0 0 27px;
+	}
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&-item {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: center;
+		width: 282px;
+		height: 318px;
+		border: 2px solid $serviceItemBorder;
+		background: $white;
+		padding: 0 20px 8px 20px;
+		border-radius: 4px;
+		position: relative;
+		&::after {
+			content: '';
+			display: none;
+			position: absolute;
+			height: 4px;
+			left: -2px;
+			right: -2px;
+			bottom: -2px;
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			background: rgba(0,157,255,1);
+			background: -moz-linear-gradient(left, rgba(0,157,255,1) 0%, rgba(59,189,240,1) 100%);
+			background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,157,255,1)), color-stop(100%, rgba(59,189,240,1)));
+			background: -webkit-linear-gradient(left, rgba(0,157,255,1) 0%, rgba(59,189,240,1) 100%);
+			background: -o-linear-gradient(left, rgba(0,157,255,1) 0%, rgba(59,189,240,1) 100%);
+			background: -ms-linear-gradient(left, rgba(0,157,255,1) 0%, rgba(59,189,240,1) 100%);
+			background: linear-gradient(to right, rgba(0,157,255,1) 0%, rgba(59,189,240,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009dff', endColorstr='#3bbdf0', GradientType=1 );
+		}
+		&--icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 0 0 auto;
+			width: 124px;
+			height: 104px;
+			margin-top: 50px;
+			background: url("../assets/Oval.svg") 0 0 no-repeat;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+			&__payment::before {
+				background: url("../assets/online-payment.svg") center center no-repeat;
+			}
+			&__house::before {
+				background: url("../assets/house-icon-primary.svg") center center no-repeat;
+			}
+			&__telecom::before {
+				background: url("../assets/telecom-primary.svg") center center no-repeat;
+			}
+			&__entertainment::before {
+				background: url("../assets/entertainment-primary.svg") center center no-repeat;
+			}
+		}
+		&--title {
+			flex: 1 0 auto;
+			font-family: Helvetica;
+			font-size: 23px;
+			color: $mainTextColor;
+			letter-spacing: -0.5px;
+			text-align: center;
+			line-height: 25px;
+			margin-top: 15px;
+		}
+		&--text {
+			flex: 0 0 auto;
+			font-family: Helvetica;
+			font-size: 14px;
+			color: $serviceTextColor;
+			letter-spacing: 0;
+			line-height: 20px;
+		}
+		&:hover {
+			box-shadow: rgba($mainTextColor, 0.2) 8px 8px 20px;
+			border-color: $white;
+			&::after {
+				display: block;
+			}
+			.services-item--title {
+				color: $menuButton;
+			}
+			.services-item--icon__payment::before {
+				background: url("../assets/online-payment-active.svg") center center no-repeat;
+			}
+			.services-item--icon__house::before {
+				background: url("../assets/house-icon-active.svg") center center no-repeat;
+			}
+			.services-item--icon__telecom::before {
+				background: url("../assets/telecom-active.svg") center center no-repeat;
+			}
+			.services-item--icon__entertainment::before {
+				background: url("../assets/entertainment-active.svg") center center no-repeat;
+			}
+		}
+	}
+}

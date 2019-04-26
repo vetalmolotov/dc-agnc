@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>menu-burger</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sticky-top-panel-menu" transform="translate(-552.000000, -44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="top-menu-burger">
+                <g transform="translate(537.000000, 30.000000)">
+                    <g id="menu-burger" transform="translate(15.000000, 14.000000)">
+                        <path d="M0,2 L0,0 L18,0 L18,2 L0,2 Z M0,7 L0,5 L18,5 L18,7 L0,7 Z M0,12 L0,10 L18,10 L18,12 L0,12 Z" id="menu"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

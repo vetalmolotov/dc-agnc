@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>arrow-white-small</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.399855841">
+        <g id="main-tool-panel" transform="translate(-416.000000, -43.000000)" fill="#5A6E84">
+            <g id="top-menu">
+                <g transform="translate(200.000000, 37.000000)">
+                    <polygon id="arrow-white-small" transform="translate(221.000000, 9.000135) rotate(90.000000) translate(-221.000000, -9.000135) " points="219.432865 4.000135 217.999865 5.375135 221.282865 8.999135 217.999865 12.625135 219.432865 14.000135 224.000865 8.999135"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

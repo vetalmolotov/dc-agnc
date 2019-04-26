@@ -1,0 +1,166 @@
+@import '_fonts';
+@import '_variables';
+
+.metabar {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	background: $headerBackground;
+	margin-bottom: 35px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	&-call,
+	&-talk {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-call {
+		margin: 3px 0 0 1px;
+		.icon-phone {
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background: url("../assets/phone.svg") 0 0 no-repeat;
+			margin: 0 6px 0 8px;
+		}
+		.icon-usa {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url("../assets/united-states-of-america.svg") 0 0 no-repeat;
+			margin: 0 0 0 10px;
+		}
+	}
+	&-talk {
+		.metabar-text {
+			margin: 3px 10px 0 2px;
+		}
+	}
+	&-text {
+		color: $textColorOpacity;
+		font-size: 14px;
+		letter-spacing: -0.5px;
+	}
+	&-link {
+		display: inline-block;
+		text-decoration: none;
+		color: $white;
+		font-size: 16px;
+		letter-spacing: 0;
+		&-request {
+			display: flex;
+			align-items: center;
+			border: 2px solid $white;
+			border-radius: 2px;
+			padding: 0 27px 0 14px;
+			height: 40px;
+			position: relative;
+			font-size: 12px;
+			color: $white;
+			letter-spacing: 0;
+			&::after {
+				content: '';
+				width: 6px;
+				height: 10px;
+				position: absolute;
+				top: 13px;
+				right: 10px;
+				background: url("../assets/arrow-white-small-left.svg") 0 0 no-repeat;
+			}
+		}
+	}
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	height: 100px;
+	&-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100px;
+		height: 100px;
+		font-size: 20px;
+		color: #14141E;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		font-family: 'CeraPro-Medium';
+		background: url("../assets/logo-test.svg") 0 0 no-repeat;
+	}
+	&-navigation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 677px;
+		margin: 0 0 8px 100px;
+		&-link {
+			font-size: 16px;
+			color: $mainTextColor;
+			letter-spacing: -0.3px;
+			text-decoration: none;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 1px;
+				background: $mainTextColor;
+				opacity: 0;
+				transition: opacity $animationSpeed, bottom $animationSpeed;
+			}
+			&:hover::before {
+				opacity: 1;
+				bottom: -1px;
+			}
+			&__more {
+				&::after {
+					content: '';
+					position: absolute;
+					right: -15px;
+					top: 5px;
+					width: 10px;
+					height: 6px;
+					background: url("../assets/arrow-white-small.svg") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+	&-search {
+		width: 40px;
+		height: 40px;
+		margin: 0 0 8px 82px;
+		background: url("../assets/search.svg") center center no-repeat;
+	}
+	&-order {
+		display: flex;
+		width: 150px;
+		height: 40px;
+		margin: 0 0 8px 25px;
+		&-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			background: $menuButton;
+			font-family: 'CeraPro-Bold';
+			color: $white;
+			text-decoration: none;
+			border-radius: 2px;
+			transition: background $animationSpeed;
+			&:hover {
+				background: rgba($menuButton, 0.8);
+			}
+		}
+	}
+}
